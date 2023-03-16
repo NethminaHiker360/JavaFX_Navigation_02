@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="mainAnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nethu.navigation.controller.MainformController">
+   <children>
+      <AnchorPane fx:id="AchorPaneOption" prefHeight="400.0" prefWidth="255.0">
+         <children>
+            <Button fx:id="btnWindowA" layoutX="92.0" layoutY="56.0" mnemonicParsing="false" onAction="#btnWindowAOnAction" text="Window A" />
+            <Button fx:id="btnWindowB" layoutX="92.0" layoutY="124.0" mnemonicParsing="false" onAction="#btnWindowBOnAction" text="Window B" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="AchorPaneWindow" layoutX="255.0" prefHeight="400.0" prefWidth="345.0" />
+   </children>
+</AnchorPane>
