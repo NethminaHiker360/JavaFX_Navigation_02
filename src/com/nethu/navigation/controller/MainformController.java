@@ -15,12 +15,14 @@ public class MainformController {
     public AnchorPane mainAnchorPane;
 
     public void btnWindowAOnAction(ActionEvent actionEvent) throws IOException {
-        AchorPaneWindow.getChildren().clear();
-        AchorPaneWindow.getChildren().add(FXMLLoader.load(getClass().getResource("../view/windowA.fxml")));
+        setUI("windowA");
     }
 
     public void btnWindowBOnAction(ActionEvent actionEvent) throws IOException {
+        setUI("windowB");
+    }
+    private void setUI(String location) throws IOException {
         AchorPaneWindow.getChildren().clear();
-        AchorPaneWindow.getChildren().add(FXMLLoader.load(getClass().getResource("../view/windowB.fxml")));
+        AchorPaneWindow.getChildren().add(FXMLLoader.load(getClass().getResource("../view/"+location+".fxml")));
     }
 }
